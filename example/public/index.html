@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nathaniel Le Sage - Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <head>
-  <meta charset="utf-8" />
-  <title>PolyVinyl Example - Home Page</title>
-  <meta property="og:title" content="PolyVinyl Example" />
-  <meta property="og:description" content="An example site for website composition"/>
-  <meta property="og:image" content="logo.png" />
-  <link rel="stylesheet" href="styles.css" />
-    <meta 
-     name="viewport"
-     content="width=device-width,initial-scale=1.0,user-scalable=yes,shrink-to-fit=no"
-    />
-  <head>
-    <title>I Love You</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
 </head>
 <body>
-<section>
-  <div id="leftcol"></div>
-  <div id="aboutme">
-    <header id="landing-page-header">
-      <nav>
-    <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cv.html">CV</a></li>
-    </ul>
-</nav>
 
-      <hr>
-    </header>
-    <h1>
-      About Me
-    </h1>
-    <p>
-      I am a man.
-    </p>
-    <a href="dumpers.html">
-      Click here to learn about dump trucks.
-    </a>
+  <header id = "hd">
+	  <a href="index.html">HOME</a>
+    <a href="cv.html">CV</a>
+    <a href="essays.html">Essays</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <div class="layout">
+    
+  <div id="leftcol">
+    <canvas id="leftcanvas"></canvas>
+  </div>
+
+  <div class="container">
+    <h1>INFINITE STATES</h1>
+    <h2>Nathaniel Le Sage</h2>
+    <p>I am a software engineer.</p>
+    <p>I specialize in embedded C++. I've worked for major clients such as John Deere and Electronic Theater Controls. I've also done web and enterprise application development and data science + machine learning for startups, research labs and established companies.</p>
+    
+    <div class="grid" id="aboutme">
+      <a href="notihgn.html" class="grid-item">
+        <img src="ribosome.png" alt="Image 1">
+        <div class="overlay">
+          <div class="box">Ribosome Explorer</div>
+		    </div>
+      </a>
+      <a href="notihgn.html" class="grid-item">
+        <img src="run-and-tumble.png" alt="Image 2">
+        <div class="overlay">
+          <div class="box">Run And Tumble</div>
+		    </div>
+      </a>
     </div>
-    <div id="rightcol"></div>
-    </section>
-  </body>
+  </div>
+
+  <div id="rightcol">
+    <canvas id="rightcanvas"></canvas>
+  </div>
+
+  </div>
+
   <script src="banner.js" defer></script>
-</html><footer></footer>
+</body>
+</html>
+<footer></footer>
 </body>
 </html>
