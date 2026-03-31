@@ -105,7 +105,7 @@ h2 {
 }
 
 html {
-  height: 100%;
+  background-color:black;
   color: white;
 }
 
@@ -132,6 +132,7 @@ input[type="submit"]:hover {
 .layout {
   display: flex;
   background-color: black;
+  height: 100%;
 }
 
 
