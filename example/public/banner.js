@@ -14,7 +14,9 @@ function resize(canvas,ctx) {
 }
 
 dna = ["A", "C", "T", "G"];
+colors_dark = ["#690000", "#000769", "#676900", "#690000"];
 colors = ["red", "#989bff", "#f6ff00", "#00ff0d"];
+colors_light = ["#ff9292", "rgb(163, 167, 255)", "#fbff94", "#a4ffa9"];
 
 function draw(canvas,ctx) {
 
@@ -42,11 +44,16 @@ function draw(canvas,ctx) {
   for (let m = 0; m < numCols; m++) {
     for (let n = 0; n < numRows; n++) {
       r = Math.floor(Math.random() * 4);
+      ctx.shadowColor = colors[r];
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 0;
+      ctx.shadowBlur = 5;
       ctx.fillStyle = colors[r];
       ctx.fillText(dna[r],offsetX+m*(canvas.offsetWidth/numCols),offsetY+n*(canvas.offsetHeight/numRows)+ctx.measureText('A').actualBoundingBoxAscent);
     }
   }
   
+  ctx.shadowBlur = 0;
   // scanline effect
   ctx.fillStyle = "black";
   for (let n = 0; n < canvas.offsetHeight; n++) {
