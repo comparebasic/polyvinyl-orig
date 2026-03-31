@@ -135,11 +135,17 @@ input[type="submit"]:hover {
   height: 100%;
 }
 
+#leftblank, #rightblank {
+  display: flex;
+  width: 50%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
 
 #leftcol, #rightcol {
   display: flex;
-  width: 25%;
-  max-width: 300px;
+  width: 50%;
+  max-width: 200px;
 }
 
 #leftcanvas, #rightcanvas {
