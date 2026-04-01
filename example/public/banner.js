@@ -53,8 +53,8 @@ function draw(canvas,ctx) {
     }
   }
   
-  ctx.shadowBlur = 0;
   // scanline effect
+  ctx.shadowBlur = 0;
   ctx.fillStyle = "black";
   for (let n = 0; n < canvas.offsetHeight; n++) {
     if (n % 3 == 0) {
